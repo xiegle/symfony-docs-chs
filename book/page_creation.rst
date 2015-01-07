@@ -25,16 +25,14 @@ Symfony遵守这样的设计哲学并且提供各种工具开发最佳实践来�
 
 .. _page-creation-environments:
 
-Environments & Front Controllers
+环境 & 前端控制器
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Every Symfony application runs within an :term:`environment`. An environment
-is a specific set of configuration and loaded bundles, represented by a string.
-The same application can be run with different configurations by running the
-application in different environments. Symfony comes with three environments
-defined — ``dev``, ``test`` and ``prod`` — but you can create your own as well.
+所有的Symfony应用都运行在:term:`环境`中. 这个环境是通过字符串设置的，包括对配置
+的设置和加载的bundles。这使得同一个应用可以通过不同设置运行在不同的环境下。Symfony
+自带三种环境定义— ``dev``, ``test`` 和 ``prod`` — 你也可以创建自己的环境定义。
 
-Environments are useful by allowing a single application to have a dev environment
+一个应用的多种环境，可以Environments are useful by allowing a single application to have a dev environment
 built for debugging and a production environment optimized for speed. You might
 also load specific bundles based on the selected environment. For example,
 Symfony comes with the WebProfilerBundle (described below), enabled only

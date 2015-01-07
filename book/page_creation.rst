@@ -1,28 +1,24 @@
 .. index::
    single: Page creation
 
-.. _creating-pages-in-symfony2:
+.. Creating Pages in Symfony:
 
-Creating Pages in Symfony
+利用symfony2创建页面
 =========================
 
-Creating a new page in Symfony is a simple two-step process:
+利用symfony2创建页面只需要简单的2步:
 
-* *Create a route*: A route defines the URL (e.g. ``/about``) to your page
-  and specifies a controller (which is a PHP function) that Symfony should
-  execute when the URL of an incoming request matches the route path;
+* *创建路由(route)*: 路由定义了URL指向的页面(例如 ``/about``)并且指定了对应的控
+  制器(特定的一个PHP函数)。当请求匹配路由路径时，Symfony将会执行对应的控制器。
 
-* *Create a controller*: A controller is a PHP function that takes the incoming
-  request and transforms it into the Symfony ``Response`` object that's
-  returned to the user.
+* *创建控制器(controller)*: 控制器是一个PHP函数，该函数根据收到的请求，返回Symfony
+  的Rsponse对象。
 
-This simple approach is beautiful because it matches the way that the Web works.
-Every interaction on the Web is initiated by an HTTP request. The job of
-your application is simply to interpret the request and return the appropriate
-HTTP response.
+这种使问题简化的做法非常优美，并且更符合HTTP的工作方式。 
+每一个网页的互动都是由HTTP请求发起。你的应用所要做的仅仅是接收请求并返回恰当的响应。
 
-Symfony follows this philosophy and provides you with tools and conventions
-to keep your application organized as it grows in users and complexity.
+Symfony遵守这样的设计哲学并且提供各种工具开发最佳实践来保证在用户和复杂性不断增加的
+情况下，仍然能很好的组织你的应用。
 
 .. index::
    single: Page creation; Environments & Front Controllers
